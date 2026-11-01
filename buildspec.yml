@@ -17,7 +17,7 @@ phases:
   build:
     commands:
       - docker build -t $REPOSITORY_URI:$IMAGE_TAG .
-      - printf '[{"name":"simple-app","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - printf '[{"name":"nodejs-demo","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 
   post_build:
     commands:

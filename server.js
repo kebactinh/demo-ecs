@@ -6,6 +6,6 @@ const server = http.createServer((req, res) => {
   res.end("Hello Docker! Node.js is running.");
 });
 
-server.listen(3000, "0.0.0.0", () => {
-  console.log("Server is running on port 3000-v3");
+server.listen(8080, "0.0.0.0", () => {
+  console.log("Server is running on port 8080");
 });
